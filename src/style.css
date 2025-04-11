@@ -152,6 +152,9 @@ header {
   color: #fcc777;
   font-family: 'Playfair Display', serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Card Container */
 .card-container {
@@ -1072,4 +1075,122 @@ h3 {
   font-size: 0.9rem;
   margin: 10px 0;
   font-family: 'Poppins', sans-serif;
+}
+/* transport text*/
+.transport-text {
+  font-size: 1.5rem; /* Default */
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  color: #f4c16e; /* Adjust to match your theme */
+  text-align: center;
+  margin-bottom: 50px; /* Increased gap */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .transport-text {
+    font-size: 1.5rem; /* Reduce size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-text {
+    font-size: 1.2rem; /* Smaller screens */
+  }
+}
+
+.transport-text1 {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto; /* Center text */
+  padding: 0 10px;
+  margin-top: 25px; /* Additional spacing */
+}
+
+@media (max-width: 768px) {
+  .transport-text1 {
+    font-size: 0.9rem; /* Slightly smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-text1 {
+    font-size: 0.85rem; /* Smaller text for mobiles */
+  }
+}
+
+.trans-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+/* Make button full-width on smaller screens */
+@media (max-width: 768px) {
+  .trans-btn {
+    width: 50%;
+    padding: 10px 0;
+  }
+}
+
+.trans-btn:hover {
+  background-color: #a67c2a;
+}
+/* footer codes*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 230px;
+}
+
+.footer-logo,
+.footer-info,
+.footer-contact,
+.footer-address {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-contact h3,
+.footer-address h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-contact a {
+  color: #f4c16e;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #111;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transportation - Tony's Delight UK</title>
+    <title>Tony's Delight UK</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
@@ -23,7 +23,7 @@
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul id="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="/menu.html">Products</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/transportation.html">Transportation</a></li>
@@ -34,13 +34,13 @@
     <section class="hero">
       <h1>Tony's Delight UK</h1>
       <p>Bringing the finest Asian flavors to the European market.</p>
-      <a href="assortment.html" class="btn">Explore Our Assortment</a>
+      <a href="#assortment" class="btn">Explore Our products</a>
     </section>
 
     <!-- Assortment Section -->
-    <section class="assortment">
+    <section id="assortment" class="assortment">
       <div class="container">
-        <h2>Our Assortment</h2>
+        <h2>Our Products</h2>
         <div class="card-container">
           <div class="card">
             <img src="images/thailand.jpg" alt="Thailand" />
@@ -68,7 +68,7 @@
         <div class="journey-content">
           <img src="images/burger.png" alt="Burger" class="journey-image" />
           <div class="journey-text">
-            <h2>About us</h2>
+            <h2 class="journey-title">About us</h2>
             <p>
               Tony's Delight EU brings Asia's finest products to Europe,
               sourcing from India, China, Thailand, and beyond. With 20+ years
@@ -90,8 +90,16 @@
             <h3>SWITZERLAND</h3>
             <p><strong>Tony Trading GmbH</strong></p>
             <p>Lehenmattstrasse 352, 4052 Basel, Switzerland</p>
-            <p><strong>Email:</strong> swiss@tonysdelighteu.com</p>
-            <p><strong>Phone:</strong> 0041 763363036</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:swiss@tonysdelighteu.com"
+                >swiss@tonysdelighteu.com</a
+              >
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+41763363036">0041 763363036</a>
+            </p>
           </div>
 
           <div class="branch">
@@ -99,17 +107,38 @@
             <h3>GERMANY</h3>
             <p><strong>Tony's Food GmbH</strong></p>
             <p>Im Wörth 23, 79576 Weil am Rhein</p>
-            <p><strong>Email:</strong> germany@tonysdelighteu.com</p>
-            <p><strong>Phone:</strong> 0041 763363036 or 0031 634333132</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:germany@tonysdelighteu.com"
+                >germany@tonysdelighteu.com</a
+              >
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+41763363036">0041 763363036</a> or
+              <a href="tel:+31634333132">0031 634333132</a>
+            </p>
           </div>
 
           <div class="branch">
-            <img src="images/uk.png" alt="UK Flag" />
-            <h3>ENGLAND</h3>
-            <p><strong>P.I. FOODS Ltd</strong></p>
-            <p>64, Argyl Road, Edmonton, London, Enfield, N18 2PW</p>
-            <p><strong>Email:</strong> uk@tonysdelighteu.com</p>
-            <p><strong>Phone:</strong> 0044 79550271145 or 0031 634333132</p>
+            <img src="images/netherlands.png" alt="Netherlands Flag" />
+            <h3>NETHERLANDS</h3>
+            <p><strong>EXORTIC FOOD LICHTENSTEIN</strong></p>
+            <p>Landstrasse 40 9495 Triesen</p>
+            <p>
+              <strong>Website:</strong>
+              <a href="https://www.exoticfood.li" target="_blank"
+                >www.exoticfood.li</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@exorticfood.li">info@exorticfood.li</a>
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+41782612828">0041782612828</a>
+            </p>
           </div>
 
           <div class="branch">
@@ -117,12 +146,37 @@
             <h3>NETHERLANDS</h3>
             <p><strong>Tony's Delight Europe B.V.</strong></p>
             <p>Katwijkerbroek 32, 2223 XP, Katwijk (ZH), Netherlands</p>
-            <p><strong>Email:</strong> info@tonysdelighteu.com</p>
-            <p><strong>Phone:</strong> +31702230042</p>
-            <p><strong>WhatsApp:</strong> +31 634333132</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@tonysdelighteu.com"
+                >info@tonysdelighteu.com</a
+              >
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+31702230042">+31702230042</a>
+            </p>
+            <p>
+              <strong>WhatsApp:</strong>
+              <a href="https://wa.me/31634333132" target="_blank"
+                >+31 634333132</a
+              >
+            </p>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="transport-text">
+      <h2>We deliver right to your door</h2>
+      <p class="transport-text1">
+        We will take care of getting your ordered products directly to your
+        desired delivery address. With our range of transportation partners, we
+        will ensure that you get your order quickly and correct.
+      </p>
+      <button class="trans-btn" onclick="location.href='/transportation.html'">
+        Transportation
+      </button>
     </section>
 
     <!-- Footer -->
